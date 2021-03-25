@@ -19,7 +19,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
     <div css={style} className={className} id="custom-template">
       <div>
         <h1>{document?.foo?.title ?? "Default title"}</h1>
-        <iframe src={document.foo.link}/>
+        <iframe src={document?.foo?.link}/>
       </div>
     </div>
   );
