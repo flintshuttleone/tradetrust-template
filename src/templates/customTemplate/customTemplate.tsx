@@ -8,6 +8,10 @@ const style = css`
     background-color: lightgray;
     overflow-wrap: anywhere;
     white-space: break-spaces;
+  },
+  h4 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 `;
 
@@ -18,8 +22,8 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
   return (
     <div css={style} className={className} id="custom-template">
       <div>
-        <h1>{document?.foo?.title ?? "Default title"}</h1>
-        <iframe src={document?.foo?.link}/>
+        <h4>{document?.foo?.title ?? "Default title"}</h4>
+        <img src={document?.foo?.img} width="500px"/>
       </div>
     </div>
   );
