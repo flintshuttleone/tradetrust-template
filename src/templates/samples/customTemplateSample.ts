@@ -5,6 +5,8 @@ export interface CustomTemplateCertificate extends v2.OpenAttestationDocument {
   institute: string;
   foo?: {
     title: string;
+    img: string;
+    pdf: string;
   };
   $template: v2.TemplateObject;
 }
