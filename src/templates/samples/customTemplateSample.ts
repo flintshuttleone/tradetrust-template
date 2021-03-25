@@ -6,6 +6,7 @@ export interface CustomTemplateCertificate extends v2.OpenAttestationDocument {
   foo?: {
     title: string;
     link: string;
+    img: string;
   };
   $template: v2.TemplateObject;
 }
@@ -25,6 +26,7 @@ export const customTemplateCertificate: CustomTemplateCertificate = {
   },
   foo: {
     title: "ShuttleOne",
-    link: "http://shuttleone.network/test/table.pdf"
+    link: "http://shuttleone.network/test/table.pdf",
+    img: "https://shuttleone.network/test/invoice.png"
   }
 };
