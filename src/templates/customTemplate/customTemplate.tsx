@@ -23,7 +23,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
     <div css={style} className={className} id="custom-template">
       <div>
         <h4>{document?.foo?.title ?? "Default title"}</h4>
-        <img src={document?.foo?.img} width="500px"/>
+        <embed type={document?.foo?.type} src={document?.foo?.emb}/>
       </div>
     </div>
   );
